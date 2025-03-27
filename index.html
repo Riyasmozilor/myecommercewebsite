@@ -1,652 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
 
-    <head>
-        <title>E-Commerce Website</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  
-  
-    </head>
-    <body>
-      <header class="header">
-        <div class="hd-components">
+  <!-- Header Start -->
+  <header class="header">
+    <div class="hd-components">
+      <div class="site-name">
+        <img src="img/Logo.svg" alt="Logo">
+      </div>
+      <div class="sort">
+        <img src="img/Sort.svg" alt="Sort">
+      </div>
 
-        <div class="site-name">
-          <img src="img/Logo.svg">
-         
+      <div class="search">
+        <input type="search" class="search-bar" placeholder="Search anything">
+        <div class="category">
+          <select class="dropdown">
+            <option value="" selected disabled>All Categories</option>
+            <option value="Home Decor">Home Decor</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Jewellery">Jewellery</option>
+            <option value="Electronics">Electronics</option>
+          </select>
+          <img src="img/Expand_down_light.svg" alt="Expand">
         </div>
-        <div class="sort">
-          <img src="img/Sort.svg">
+        <div class="search-icon">
+          <img src="img/Search_alt_duotone_line.svg" alt="Search">
         </div>
+      </div>
 
-        <div class="search">
-          <input type="search" class="search-bar" placeholder="Search anything">
-          
-          <div class="category">
-            <select class="dropdown" >
-              <option value="" selected disabled>All Categories</option>
-                <option value="Home Decor">Home Decor</option>
-                <option value="Fashion">Fashion</option>
-                <option value="Jewellery">Jewellery</option>
-                <option value="Electronics">Electronics</option>
-            </select>
-            <img src="img/Expand_down_light.svg">
-          </div>
-          
-          <div class="search-icon">
-            <img src="img/Search_alt_duotone_line.svg">
-          </div>
+      <div class="help">
+        <input type="button" value="Help">
+      </div>
 
-        </div>
-        <div class="help">
-          <input type="button" value="Help">
-        </div>
-        <div class="icons">
+      <div class="icons">
         <div class="account">
-          <a href="#"><img src="img/User.svg"></a>
+          <a href="#"><img src="img/User.svg" alt="User"></a>
           <p>Account</p>
         </div>
-        <div class="shoping">
-          <a href="#"><img src="img/Bag_alt.svg"></a>
-          <p>Shoping</p>
+        <div class="shopping">
+          <a href="#"><img src="img/Bag_alt.svg" alt="Bag"></a>
+          <p>Shopping</p>
           <div class="cart-count">
-            <img src="img/Ellipse 76.svg">
-              <div class="cart-count-num"> 
-                0
-            </div>
-           
-          </div>
-        </div>
-      </div>
-      <div class="nav">
-        <nav class="nav-categories">
-          <ul>
-          <li class="jewellery"><a href=#>Jewellery & Accessory</a></li>
-          <li><a href=#>Clothing & Shoes</a></li>
-          <li><a href=#>Home & Living</a></li>
-          <li><a href=#>Wedding & Party</a></li>
-          <li><a href=#>Toys & Entertainment</a></li>
-          <li><a href=#>Art & Collectibles</a></li>
-          <li><a href=#>Craft Supplies & Tools</a></li>
-          </ul>
-        </nav>
-      </div>
-      
-      </div>
-      
-      </header>
-      <div class="containerarea">
-      
-
-        <!-- <div class="main-category">
-          <img class="category-img" src="img/shoes.jpeg">
-         
-          <img class="category-img" src="img/Home.jpeg">
-          
-          <img class="category-img" src="img/Art.jpeg">
-        </div> -->
-
-        <!--Bootstrap start-->
-        <div class="container p-0 ">
-        <div class="row mt-4 justify-content-between " >
-          <div class="col-sm-4 ">
-            <div class="shoes img-fluid" >
-            <img class="img-fluid" src="img/shoes.jpeg">
-            <p>Clothing & Shoes</p>
-          </div>
-        </div>  
-          <div class="col-sm-4">
-            <div class="home img-fluid">
-            <img class="img-fluid" src="img/Home.jpeg">
-            <p>Home & Living</p>
-          </div>
-        </div>
-          <div class="col-sm-4">
-            <div class="art img-fluid">
-            <img class="img-fluid" src="img/Art.jpeg">
-            <p>Art & Collections</p>
-          </div>
-        </div>
-        </div>
-      </div>
-      
-    <div class="container p-0">
-      <div class="row mt-4 ">
-        <div class="col-lg-3 col-sm-4">
-          <div class="card1">
-          <img src="img/chair.svg">
-          <img class="favourites" src="img/favourites.svg">
-          <div class="colors">
-            <p>Colors</p>
-            <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="8" cy="8" r="8" fill="#7CB93E"/>
-              </svg>
-            <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="8" cy="8" r="8" fill="#33ABC6"/>
-                </svg>
-                <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="8" cy="8" r="8" fill="#1CCD8D"/>
-                  </svg>
-                  <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="8" cy="8" r="8" fill="#3F65EA"/>
-                    </svg>
-                    <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="8" cy="8" r="8" fill="#F74A69"/>
-                      </svg>
-                      <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="8" cy="8" r="8" fill="#A635EC"/>
-                        </svg>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="8" cy="8" r="8" fill="#F9A85D"/>
-                          </svg>     
-          </div>
-          
-            <p class="img-description ">Vonna Neva Walnut Sandalye Chair</p>
-            <p class="img-price">195,13 $</p>
-          
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-4">
-          <div class="card2">
-          <img src="img/bedlamp.svg">
-          <img class="favourites" src="img/favourites.svg">
-          <div class="colors">
-            <p>Colors</p>
-            <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="8" cy="8" r="8" fill="#7CB93E"/>
-              </svg>
-                  <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="8" cy="8" r="8" fill="#3F65EA"/>
-                    </svg>
-                    <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="8" cy="8" r="8" fill="#F74A69"/>
-                      </svg>
-                      <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="8" cy="8" r="8" fill="#A635EC"/>
-                        </svg>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="8" cy="8" r="8" fill="#F9A85D"/>
-                          </svg>
-        </div>
-        <p class="img-description ">Wood lamp, Floor Lamp, Lambader, Decorative</p>
-            <p class="img-price">458,43 $</p>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-4">
-          <div class="card3">
-          <img src="img/cushion.svg">
-          <img class="favourites" src="img/favourites.svg">
-          <div class="colors">
-            <p>Colors</p>
-                  <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="8" cy="8" r="8" fill="#3F65EA"/>
-                    </svg>
-                    <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="8" cy="8" r="8" fill="#F74A69"/>
-                      </svg>
-                      <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="8" cy="8" r="8" fill="#A635EC"/>
-                        </svg>
-                        
-        </div>
-        <p class="img-description ">NOCKEBY 3-Seat Sofa Cover Slipcover Hand Made With Multiple</p>
-            <p class="img-price">789,67 $</p>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="card4">
-          <img src="img/pillow.svg">
-          <img class="favourites" src="img/favourites.svg">
-          <div class="colors">
-            <p>Colors</p>
-            <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="8" cy="8" r="8" fill="#7CB93E"/>
-              </svg>
-              <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="8" cy="8" r="8" fill="#1CCD8D"/>
-                </svg>
-                  
-                    <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="8" cy="8" r="8" fill="#F74A69"/>
-                      </svg>
-                      <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="8" cy="8" r="8" fill="#A635EC"/>
-                        </svg>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="8" cy="8" r="8" fill="#F9A85D"/>
-                          </svg>
-        </div>
-        <p class="img-description ">Lace Punch Needle Pillow Covers with invisible zipper, 16*16 inches</p>
-            <p class="img-price">43,23 $</p>
+            <img src="img/Ellipse 76.svg" alt="Cart Count">
+            <div class="cart-count-num">0</div>
           </div>
         </div>
       </div>
     </div>
-    <div class="container p-0">
-      <div class="row mt-5">
-        <div class="col-sm-4">
-          <div class="grey-card1">
-          <img class="round-img" src="img/violet1.svg">
-          <p class="community">A community 
-            doing good</p>
-            <p class="community-desc">Commerce is a global online marketplace, where people.</p>
-          </div>
-      
-        </div>
 
-        <div class="col-sm-4">
-          <div class="grey-card2">
-          <img class="round-img" src="img/orange2.svg">
-          
-            <p class="support">Support independent
-              creators</p>
-              <p class="support-desc">Just millions of people selling the things they love.</p>
-            </div>
-        </div>
-        <div class="col-sm-4 ">
-          <div class="grey-card3">
-          <img class="round-img" src="img/blue3.svg">
-          <p class="peaceofmind">Peace
-            of mind</p>
-            <p class="peaceofmind-desc">
-              Privacy is the highest priority of our dedicated team.
-            </p>
-          </div>
-        </div>
-       
-        
-      </div>
-    </div>
-    <div class="container p-0">
-      <p class="strong mt-5">Find things you'll love. Support independent sellers.</p>
-      <p id="only_on_polka">Only on polka.</p>
-    </div>
+    <nav class="nav-categories">
+      <ul>
+        <li><a href="#">Jewellery & Accessory</a></li>
+        <li><a href="#">Clothing & Shoes</a></li>
+        <li><a href="#">Home & Living</a></li>
+        <li><a href="#">Wedding & Party</a></li>
+        <li><a href="#">Toys & Entertainment</a></li>
+        <li><a href="#">Art & Collectibles</a></li>
+        <li><a href="#">Craft Supplies & Tools</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Header End -->
 
-    <div class="container arrow-scroll px-0">
-    
-      <div class="row mt-5 justify-content-between flex-nowrap">
-        
-          
-          
-       
-          <div class="col-lg-auto col-sm-2 ">
-            <div class="lion">
-            <p>Craft Kits</p>
-            <img src="img/lion.svg">
-          </div>
-        </div>
-          
-          <div class="col-lg-auto  col-sm-2" >
-            <div class="blue-pillow">
-            <p>Throw Pillows</p>
-            <img src="img/blue-pillow.svg">
-          </div>
-        </div>
-          <div class="col-lg-auto col-sm-2 ">
-            <div class="mug">
-            <p>Natural Glass</p>
-            <img src=img/mug.svg>
-          </div>
-        </div>
-          <div class="col-lg-auto  col-sm-2 ">
-            <div class="flower">
-            <p>Self-care</p>
-            <img src="img/flower.svg">
-          </div>
-        </div>
-          <div class="col-lg-auto col-sm-2 ">
-            <div class="gift">
-            <p>Gift Ideas</p>
-            <img src="img/gift.svg">
-          </div>
-        </div>
-          <div class="col-lg-auto col-sm-2  ">
-            <div class="wall-decor">
-            <p>Wall Decor</p>
-            <img src="img/wall-decor.svg">
-          </div>
-        </div>
-          <div class="col-lg-auto col-sm-2 ">
-            <div class="axe">
-            <p>Wedding</p>
-            <img src="img/axe.svg">
-          </div>
-        </div>
-          <div class="col-lg-auto col-sm-2 ">
-            <div class="sofa">
-            <p>Life Style</p>
-            <img src="img/sofa.svg">
-          </div>
-        </div>
-        </div>
-        
-        <img class=" col left-arrow1" src="img/Left expand.svg">
-        <img class=" col right-arrow1" src="img/Right expand.svg">
-      
-    </div>
+  <!-- Body content continues here -->
 
-   
-
-    <div class="container p-0">
-      <div class="row mt-5">
-      <p class="strong mt-5">Discover unique hand-picked items</p>
-    </div>
-      
-    </div>
-    
-
-    <div class="container arrow-scroll">
-      <div class="row mt-5">
-        <div class="col px-0 brown-bag me-4">
-          <img src="img/brown-bag.svg">
-          <p class="hand-picked-desc">Distressed Tote Leather Bag Leather Bag</p>
-          <p class="hand-picked-price">216,27 $</p>
-          <img class=hand-picked-fav src="img/favourites.svg">
-        </div>
-        <div class="col px-0 sandal me-4">
-          <img src="img/sandal.svg">
-          <p class="hand-picked-desc">Womens Cognac Leather Elastic Straps</p>
-          <p class="hand-picked-price">195,13 $</p>
-          <img class=hand-picked-fav src="img/favourites.svg">
-        </div>
-        <div class="col px-0 blue-bag me-4">
-          <img src="img/blue-bag.svg">
-          <p class="hand-picked-desc">Distressed Tote Leather Bag Leather Bag</p>
-          <p class="hand-picked-price">910,76 $</p>
-          <img class=hand-picked-fav src="img/favourites.svg">
-        </div>
-        <div class="col px-0 white-shoes me-4">
-          <img src="img/white-shoes.svg">
-          <p class="hand-picked-desc">High Top Canvas Shoes</p>
-          <p class="hand-picked-price">341,02 $</p>
-          <img class=hand-picked-fav src="img/favourites.svg">
-        </div>
-        <div class="col px-0 ring me-4">
-          <img src="img/ring.svg">
-          <p class="hand-picked-desc">Rose Gold Moissanite Vintage Wedding Ring Set</p>
-          <p class="hand-picked-price">3.344,13 $</p>
-          <img class=hand-picked-fav src="img/favourites.svg">
-        </div>
-        <div class="col px-0 bangle">
-          <img src="img/bangle.svg">
-          <p class="hand-picked-desc">Blue Topaz Bangle 24K Gold Plated Handmade</p>
-          <p class="hand-picked-price">789,09 $</p>
-          <img class=hand-picked-fav src="img/favourites.svg">
-
-        </div>
-      </div>
-      <img class=" col left-arrow2" src="img/Left expand.svg">
-        <img class=" col right-arrow2" src="img/Right expand.svg">
-    </div>
-    <div class="container arrow-scroll2">
-      <div class="row mt-5 ">
-        <div class="col modern me-4 px-0 d-flex justify-content-center">
-          <p>Modern 
-            Farmhouse</p>
-            <div class="col line1 mt-4">
-
-            </div>
-        </div>
-        <div class="col eclectic me-4 px-0 d-flex justify-content-center">
-          <p>Eclectic Decor</p>
-          <div class="col line2 mt-4">
-
-          </div>
-        </div>
-        <div class="col polka me-4 px-0 d-flex justify-content-center">
-          <p>Polka Boho 
-            Decor</p>
-            <div class="col line3 mt-4">
-
-            </div>
-        </div>
-        <div class="col minimalist me-4 px-0 d-flex justify-content-center">
-          <p>Minimalist
-            Style</p>
-            <div class="col line4 mt-4">
-
-            </div>
-        </div>
-        <div class="col anniversary me-4 px-0 d-flex justify-content-center">
-          <p>Anniversary
-            Gift</p>
-            <div class="col line5 mt-4">
-
-            </div>
-        </div>
-        <div class="col wedgift px-0 d-flex justify-content-center">
-          <p>Wedding
-            Gifts</p>
-            <div class="col line6 mt-4">
-
-            </div>
-        </div>
-      </div>
-
-    </div>
-    <div class="container">
-
-      <div class="row green-shoe-iphone">
-        <div class="col green-shoe me-4 px-0">
-          <img src="img/green-grey-shoe.svg" style="width:312px; height:418px; border-radius: 5px;">
-        </div>
-
-        <div class="col nightstand me-4">
-          <img src="img/nightstand.svg">
-          <div class="colors">
-            <p>Colors</p>
-            <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="8" cy="8" r="8" fill="#7CB93E"/>
-              </svg>
-            <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="8" cy="8" r="8" fill="#33ABC6"/>
-                </svg>
-                <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="8" cy="8" r="8" fill="#1CCD8D"/>
-                  </svg>
-                  <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="8" cy="8" r="8" fill="#3F65EA"/>
-                    </svg>
-                    <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="8" cy="8" r="8" fill="#F74A69"/>
-                      </svg>
-                      <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="8" cy="8" r="8" fill="#A635EC"/>
-                        </svg>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="8" cy="8" r="8" fill="#F9A85D"/>
-                          </svg>     
-          </div>
-          <p class="img-description">Rovena Riva Series 6 Pcs. Wide Seating Claret Red Chair</p>
-          <p class="img-price">195,13 $</p>
-        </div>
-
-        <div class="col iphone me-4 ">
-          <img src="img/iphone.svg">
-          <div class="colors">
-            <p>Colors</p>
-            <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="8" cy="8" r="8" fill="#7CB93E"/>
-              </svg>
-                  <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="8" cy="8" r="8" fill="#3F65EA"/>
-                    </svg>
-                    <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="8" cy="8" r="8" fill="#F74A69"/>
-                      </svg>
-                      <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="8" cy="8" r="8" fill="#A635EC"/>
-                        </svg>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="8" cy="8" r="8" fill="#F9A85D"/>
-                          </svg>
-        </div>
-        <p class="img-description">Iphone 12 128 GB (Red) Apple </p>
-        <p class="img-price">458,43 $</p>
-        </div>
-
-        <div class="col balm">
-          <img src="img/balm.svg">
-          <div class="colors">
-            <p>Colors</p>
-                  <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="8" cy="8" r="8" fill="#3F65EA"/>
-                    </svg>
-                    <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="8" cy="8" r="8" fill="#F74A69"/>
-                      </svg>
-                      <svg class="me-1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="8" cy="8" r="8" fill="#A635EC"/>
-                        </svg>
-
-        </div>
-        <p class="img-description">Rovena Riva Series 6 Pcs. Wide Seating Claret Red Chair</p>
-        <p class="img-price">789,67 $</p>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col px-0 brown-bag me-4">
-          <img src="img/brown-bag.svg">
-          <p class="hand-picked-desc">Distressed Tote Leather Bag Leather Bag</p>
-          <p class="hand-picked-price">216,27 $</p>
-          <img class=hand-picked-fav src="img/favourites.svg">
-        </div>
-        <div class="col px-0 sandal me-4">
-          <img src="img/sandal.svg">
-          <p class="hand-picked-desc">Womens Cognac Leather Elastic Straps</p>
-          <p class="hand-picked-price">195,13 $</p>
-          <img class=hand-picked-fav src="img/favourites.svg">
-        </div>
-        <div class="col px-0 blue-bag me-4">
-          <img src="img/blue-bag.svg">
-          <p class="hand-picked-desc">Distressed Tote Leather Bag Leather Bag</p>
-          <p class="hand-picked-price">910,76 $</p>
-          <img class=hand-picked-fav src="img/favourites.svg">
-        </div>
-        <div class="col px-0 white-shoes me-4">
-          <img src="img/white-shoes.svg">
-          <p class="hand-picked-desc">High Top Canvas Shoes</p>
-          <p class="hand-picked-price">341,02 $</p>
-          <img class=hand-picked-fav src="img/favourites.svg">
-        </div>
-        <div class="col px-0 ring me-4">
-          <img src="img/ring.svg">
-          <p class="hand-picked-desc">Rose Gold Moissanite Vintage Wedding Ring Set</p>
-          <p class="hand-picked-price">3.344,13 $</p>
-          <img class=hand-picked-fav src="img/favourites.svg">
-        </div>
-        <div class="col px-0 bangle">
-          <img src="img/bangle.svg">
-          <p class="hand-picked-desc">Blue Topaz Bangle 24K Gold Plated Handmade</p>
-          <p class="hand-picked-price">789,09 $</p>
-          <img class=hand-picked-fav src="img/favourites.svg">
-
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col subscribe">
-          <p class="subscribe-text1">Yes!</p>
-          <p class="subscribe-text2">Send me exclusive offers, unique gift ideas, and personalized
-            tips for shopping and selling on Commerce.</p>
-          <input type=search class="submit-email" placeholder="Drop your Email">
-         <button class="subscribe-button">Subscribe
-        <img src="img/Arrow_right.svg">
-         
-        </button>
-        <a href="#"> <p class="first-order">First order only. You’re ready?<p></a>
-            
-
-          
-        </div>
-      </div>
-    </div>
-    
-    <div class="containerarea">
-      <div class="row commercerow mt-5 ">
-        <div class="col commerce ">
-          Commerce, is powered by 100% renewable electricity.
-        </div>
-      </div>
-
-    </div>
-    <div class="container">
-      <div class="row mt-5 ">
-        <div class="col-3 footer1 px-0 me-4 ">
-         <img src="img/Logo.svg">
-         <p class="mt-4">Cricklewood,London
-          NW2 6qg, Uk</p>
-          <img class="mt-2 social-logos" src="img/facebook.svg">
-          <img class="mt-2 social-logos" src="img/twitter.svg">
-          <img class="mt-2 social-logos" src="img/linkedin.svg">
-          <img class="mt-2 social-logos" src="img/dribbble.svg">
-         
-        </div>
-        <div class="col footer2 px-0 me-4">
-         <p class="strong">Shop</p>
-         
-          <p class="footer-list footer-list-spacing mt-4">Gift Cards<p>
-          <p class="footer-list footer-list-spacing">Site Map<p>
-          <p class="footer-list footer-list-spacing">Polka blog</p>
-          <p class="footer-list footer-list-spacing">Login</p>
-          <p class="footer-list footer-list-spacing">Sign in</p>
-         
-        </div>
-        <div class="col footer3 px-0 me-4">
-          <p class="strong">Sell</p>
-          <p class="footer-list footer-list-spacing  mt-4">Sell on Polka</p>
-          <p class="footer-list footer-list-spacing">Teams</p>
-          <p class="footer-list footer-list-spacing">Forums</p>
-          <p class="footer-list footer-list-spacing">Affiliates</p>
-        </div>
-        <div class="col footer4 px-0 me-4">
-          <p class="strong">About</p>
-          <p class="footer-list footer-list-spacing mt-4">Polka, Inc.</p>
-          <p class="footer-list footer-list-spacing">Policies</p>
-          <p class="footer-list footer-list-spacing">Investors</p>
-          <p class="footer-list footer-list-spacing">Careers</p>
-          <p class="footer-list footer-list-spacing">Press</p>
-        </div>
-        <div class="col footer5 px-0">
-          <p class="strong">Help</p>
-          <p class="footer-list footer-list-spacing mt-4">Help Center</p>
-          <p class="footer-list footer-list-spacing">Trust and safety</p>
-          <p class="footer-list footer-list-spacing">Privacy settings</p>
-        </div>
-      </div>
-
-    </div>
-    <div class="container copyrightclass">
-      <div class="row  pt-2 px-0">
-        <div class="col px-0 copyright1">
-          <p class=" footer-list footer-list-spacing">© 2022 Commerce, Inc.</p>
-        </div>
-        <div class="col-1 px-0 copyright2">
-          <p class= "footer-list footer-list-spacing ">Privacy policy</p>
-        </div>
-        <div class="col-1 px-0 copyright3">
-          <p class="footer-list footer-list-spacing ">Terms of use</p>
-        </div>
-        <div class="col-1 px-0 copyright4">
-          <p class="footer-list footer-list-spacing ">Cookies</p>
-        </div>
-        <div class="col px-0 scroll">
-          <a href=#><p class="scroll-text">Scroll to top</p></a>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 6.66675L8 2.66675M8 2.66675L12 6.66675M8 2.66675L8 12.6667" stroke="#5F5F5F" stroke-linecap="round"/>
-            </svg>
-            
-      </div>
-    </div>
-    </div>
-  
-   
-    </div>
-    
-    </body>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-IgOgzAlm1X9O1p0FsB9I0ZlJMnMQqzg+vIhM+6H5oRSvMdKbbgEk+Q7aKcJ9rB4E" crossorigin="anonymous"></script>
+</body>
 </html>
-
